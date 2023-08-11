@@ -39,6 +39,13 @@ const getSourceDisplay = (
     );
   }
 
+  if (connector.source === "contentful") {
+    return (
+      sourceMetadata.displayName +
+      ` [${connector.connector_specific_config?.space}/${connector.connector_specific_config?.environment}]`
+    );
+  }
+
   if (connector.source === "jira") {
     return (
       sourceMetadata.displayName +

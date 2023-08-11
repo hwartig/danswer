@@ -9,6 +9,7 @@ const sources: Source[] = [
   { displayName: "Slack", internalName: "slack" },
   { displayName: "BookStack", internalName: "bookstack" },
   { displayName: "Confluence", internalName: "confluence" },
+  { displayName: "Contentful", internalName: "contentful" },
   { displayName: "Jira", internalName: "jira" },
   { displayName: "Productboard", internalName: "productboard" },
   { displayName: "Slab", internalName: "slab" },

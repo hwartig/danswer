@@ -18,6 +18,7 @@ import { FaFile, FaGlobe } from "react-icons/fa";
 import Image from "next/image";
 import jiraSVG from "../../../public/Jira.svg";
 import confluenceSVG from "../../../public/Confluence.svg";
+import contentfulSVG from "../../../public/Contentful.svg";
 import guruIcon from "../../../public/Guru.svg";
 
 interface IconProps {
@@ -181,6 +182,20 @@ export const ConfluenceIcon = ({
       className={`w-[${size + 4}px] h-[${size + 4}px] -m-0.5 ` + className}
     >
       <Image src={confluenceSVG} alt="Logo" width="96" height="96" />
+    </div>
+  );
+};
+
+export const ContentfulIcon = ({
+  size = 16,
+  className = defaultTailwindCSS,
+}: IconProps) => {
+  return (
+    <div
+      style={{ width: `${size + 4}px`, height: `${size + 4}px` }}
+      className={`w-[${size + 4}px] h-[${size + 4}px] -m-0.5 ` + className}
+    >
+      <Image src={contentfulSVG} alt="Logo" width="96" height="96" />
     </div>
   );
 };

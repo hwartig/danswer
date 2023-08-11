@@ -14,6 +14,7 @@ export type ValidSources =
   | "google_drive"
   | "bookstack"
   | "confluence"
+  | "contentful"
   | "jira"
   | "productboard"
   | "slab"
@@ -62,6 +63,11 @@ export interface BookstackConfig {}
 
 export interface ConfluenceConfig {
   wiki_page_url: string;
+}
+
+export interface ContentfulConfig {
+  space: string;
+  environment: string;
 }
 
 export interface JiraConfig {
@@ -117,6 +123,10 @@ export interface Credential<T> extends CredentialBase<T> {
 
 export interface GithubCredentialJson {
   github_access_token: string;
+}
+
+export interface ContentfulCredentialJson {
+  contentful_cma_token: string;
 }
 
 export interface BookstackCredentialJson {

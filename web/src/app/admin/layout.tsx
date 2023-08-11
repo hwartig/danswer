@@ -9,6 +9,7 @@ import {
   KeyIcon,
   BookstackIcon,
   ConfluenceIcon,
+  ContentfulIcon,
   GuruIcon,
   FileIcon,
   JiraIcon,
@@ -95,6 +96,15 @@ export default async function AdminLayout({
                     </div>
                   ),
                   link: "/admin/connectors/confluence",
+                },
+                {
+                  name: (
+                    <div className="flex">
+                      <ContentfulIcon size={16} />
+                      <div className="ml-1">Contentful</div>
+                    </div>
+                  ),
+                  link: "/admin/connectors/contentful",
                 },
                 {
                   name: (

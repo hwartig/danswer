@@ -18,6 +18,7 @@ PUBLIC_DOC_PAT = "PUBLIC"
 
 
 class DocumentSource(str, Enum):
+    CONTENTFUL = "contentful"
     SLACK = "slack"
     WEB = "web"
     GOOGLE_DRIVE = "google_drive"

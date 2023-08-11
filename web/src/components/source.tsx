@@ -2,6 +2,7 @@ import { ValidSources } from "@/lib/types";
 import {
   BookstackIcon,
   ConfluenceIcon,
+  ContentfulIcon,
   FileIcon,
   GithubIcon,
   GlobeIcon,
@@ -63,6 +64,12 @@ export const getSourceMetadata = (sourceType: ValidSources): SourceMetadata => {
         icon: ConfluenceIcon,
         displayName: "Confluence",
         adminPageLink: "/admin/connectors/confluence",
+      };
+    case "contentful":
+      return {
+        icon: ContentfulIcon,
+        displayName: "Contentful",
+        adminPageLink: "/admin/connectors/contentful",
       };
     case "jira":
       return {
